@@ -35,7 +35,6 @@
 
 body {
   background-color: #E8F8F9;
-  background-image: url('/assets/vb-theme-bg.png');
 }
 
 #main {background-color: #fff;}
@@ -56,3 +55,11 @@ a, a:visited {
 a:hover { color: #fff;}
 
 .lead { }
+
+#footer {
+	background-image: url('/assets/vb-theme-bg.png');
+}
+
+#footer p {
+	color: #333;
+	font-weight: bold;}

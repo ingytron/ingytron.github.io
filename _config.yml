@@ -4,7 +4,7 @@ email: contact@voodoobettie.com
 description: > # this means to ignore newlines until "baseurl:"
   VoodooBettie is the designer with a heart of code. This is my website.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://voodoobettie.com" # the base hostname & protocol for your site
+url: "http://blog.voodoobettie.com" # the base hostname & protocol for your site
 twitter_username: voodoobettie
 github_username:  voodoobettie
 
