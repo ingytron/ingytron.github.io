@@ -9,7 +9,7 @@ WordPress and I have been friends for about eight years. I'd been a fan of using
 
 However, in practice, I found that I was generally spending time on maintaining the sites rather than creating content and coding. There were always updates that needed to be done. Spam was mitigated with Akismet but my very low-traffic servers were always being pummelled by fraudulent login attempts (there are ways to get around this but it was still annoying). I have cleaned up a fair few hacked servers, of my own and clients, and to make life easier, I ended up having to buy security plugins. The WYSIWYG system sometimes created crazy code, and in my WP multisite network I had at least 30 plugins installed for various reasons. Crazy. I wanted to have a simpler life in which I don't wrangle with dozens of plugins and themes and updates. 
 
-I came across <a href="http://jekyllrb.com/">Jekyll</a> and thought it sounded very promising, you can use it with GitHub Pages and get free hosting, and you can use a custom domain. Most of my efforts these days are on GitHub so this was a perfect option. I like that my blog will now have version control and be easily updated from my own text editor (or using GitHub's online editor) and not need to go through the logging in, doing updates, etc, WordPress blogging process.	 
+I came across the article <a href="http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html">Blogging like a hacker</a> and was intrigued from the start as I'd felt the same pains with WordPress. I decided to check out <a href="http://jekyllrb.com/">Jekyll</a> as it sounded very promising, plus you can use it with GitHub Pages and get free hosting, and you can use a custom domain. Most of my efforts these days are on GitHub so this was a perfect option. I like that my blog will now have version control and be easily updated from my own text editor (or using GitHub's online editor) and not need to go through the logging in, doing updates, etc, WordPress blogging process.	 
 
 <h3>Getting Started</h3>
 
@@ -50,4 +50,4 @@ I felt that there was some functionality still missing from the new site so I di
 
 I'm still in the process of getting this site to the way I want it set up. I will add bootstrap via the Gemfile soon (now that I have one) and do some more configuration, but overall I really liked the way that this site was fairly straightforward to set up with Jekyll.
 
-{% include twitter_plug.html %} 
+{% include twitter_share.html %} 
