@@ -35,15 +35,12 @@ permalink: /about/
 
         <p>I built quite a lot of websites for friends with just HTML and CSS, but I wanted to know how to build sites which looked a little better, I googled extensively and found that most of the sites that I liked were designed by graphic designers. Armed with that knowledge, I went to graphic design school. I learned the fundamentals of design (which is something I wanted to learn). I did PHP training, I knew SQL quite well from my work doing system administration, but then I discovered Ruby on Rails and it really let me build something to my own specification, without worrying about having to use 87 plugins and many of the issues that you get with using WordPress.</p>
 
-        <p>After design school, then I found myself in the unusual position of being a designer who preferred to code things myself rather than hand over everything to a developer. I delved further into the coding side of things, and just when I made the decision to forge my own path as a freelancer, I found out that I was pregnant and so I took a break from working for clients because babies and deadlines are not a good combination. So for the past 4 years I have mostly just been doing a lot of coding exercises and working through tutorials on current web technologies.</p>
-
-        <div id="courses">
-
-        	<div class="col-md-4">
-        <h4>Recent Courses</h4>
-        <p>I have been doing a lot of self-directed learning over the past few years, through MOOCs and online training providers. I live way out in the country, on an island, so three cheers for online learning!</p>
+        <p>Suddenly I realised that not only was I unable to withstand bad design, but after design school, I also found myself in the unusual position of being a designer who preferred to code things myself rather than hand over everything to a developer. I enjoyed the process of making things and so I delved further into the coding side of things, and just when I made the decision to forge my own path as a freelancer, I found out that I was pregnant. I took a break from working because babies and deadlines are not a good combination,so for the past 4 years I have mostly just been doing a lot of coding exercises and working through tutorials on current web technologies. I've been working towards addressing skill gaps in Computer Science, so I've been taking a lot of self-directed learning over the past few years, through MOOCs and online training providers. I live way out in the country, on an island, so three cheers for online learning!</p>
 
         <p>An aside: You might be wondering why I'm learning Python (MIT) as well as C (Harvard), and also JavaScript (FreeCodeCamp), and the simple reason is that learning Python is a segue to learning more advanced Computer Science topics, which in general, either require knowledge of Python or Java.</p>
+
+        <p>Skills go somewhere, include SQL</p>
+        <p>HTTP, TCP/IP</p>
         	
         </div>
 
@@ -75,8 +72,8 @@ permalink: /about/
         	</tr>
         	<tr>
         		<td>Introduction to Computer Science &amp; Programming (in Python)</tr>
-        	    <td>MITx / Eric </td>
-        	    <td>My Results</td>
+        	    <td>MITx / Eric Grimson</td>
+        	    <td>(in progress)</td>
         	</tr>
         	<tr><td colspan="3"><em>Interaction Design Specialization</em></td></tr>
         	<tr>
@@ -95,14 +92,9 @@ permalink: /about/
         	    <td>(in progress)</td>
         	</tr>
         	<tr>
-        		<td>Responsive Web Development and Design Specialization</tr>
-        	    <td>University of London Goldsmiths (Coursera) / Instructor</td>
+        	       <td>Responsive Web Development and Design Specialization</tr>
+        	    <td>University of London, Goldsmiths (Coursera) / Instructor</td>
         	    <td>Coming Soon</td>
-        	</tr>
-        	<tr>
-        		<td>Learning How to Learn</tr>
-        	    <td>University of California San Diego / Barbara Oakley</td>
-        	    <td>(In Progress)</td>
         	</tr>
         	<!--tr>
         		<td>Course</tr>
