@@ -1,3 +1,5 @@
+/*Typography*/
+
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       "Playfair Display", Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -22,7 +24,9 @@
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
-body {background: url('background.jpg') no-repeat center center fixed;
+/*body styling*/	
+
+body {background: #fff;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 -o-background-size: cover;
@@ -39,10 +43,8 @@ background-size: cover;
 	background-color: #ccc;
 }
 
+#header {background-color: #fff;}
 
-body {
-  background-color: #E8F8F9;
-}
 
 #main {background-color: #fff;}
 h1 span {background-color: #fff;}
@@ -56,15 +58,15 @@ p {
 }
 
 a, a:visited {
-  color: #84E8EF;
+  color: #333;
 }
 
-a:hover { color: #fff;}
+a:hover { color: #84E8EF;}
 
 .lead { }
 
 #footer {
-	background-image: url('/assets/vb-theme-bg.png');
+	
 }
 
 #footer p {
