@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "How to free up space on Ubuntu's boot partition"
+date:   2016-04-19 19:11:30
+categories: linux
+---
+
+<h1>How to free up room on /boot</h1>
+
+<p>If you've been running Ubuntu for a while and have a smallish /boot drive, then chances are you might run out of space on it. This happens to me at least every few months and this is what I do:</p>
+
+<h4>Step 1.</h4>
+<p>Check which kernel version you're currently running. You definitely don't want to delete the one you're using.</p>
+
+<code>
+uname -r 
+</code>
+
+<h4>Step 2.</h4>
+<p>Find out which kernels you have installed and don't need:</p>
+
+<code>
+sudo dpkg --list 'linux-image-*'
+</code>
+
+<h4>Step 3.</h4>
+<p>Removed unwanted / unneeded kernels.</p>
+<code>
+sudo apt-get remove linux-image-<em>[version]</em>
+</code>
+
+<p>For example:</p> 
+<code>sudo apt-get remove linux-image 3.16.0-50-generic</code>
+
+<h4>Step 4</h4>
+<p>Check how much room you've freed.</p>
+<code>df /boot</code>
+<p>If you are happy with the amount of available space, then continue. If not, go back and remove some more images.</p>
+
+
+<h4>Step 5</h4>
+<p>Use autoremove to clean out the packages you no longer need.</p>
+<code>
+	sudo apt-get autoremove
+</code>
+
+<h4>Step 6 (optional)</h4>
+<p>If you are using Grub and want to clear out old packages from your boot menu, use the following command:</p>
+
+<code>sudo update-grub</code>
+
+<p>All done! </p>
