@@ -4,10 +4,22 @@ title: Contact
 ---
 
 <div class="container-fluid">
-	<div class="col-md-8">
+	<div class="col-md-8 col-md-push-2" id="contact">
     <section>
         <h1>Get in touch</h1>
-        <p>This is how...</p>
+        <p>I'd love to hear from you if you'd be interested in hiring me. I'm currently looking for employment opportunities. </p>
+        <form method="POST" id="contactform">
+	    	<input type="text" name="name" placeholder="Your name">
+	    	<input type="email" name="_replyto" placeholder="Your e-mail address">
+	    	<input type="textarea" name="message" placeholder="Your message"></textarea>
+	    	<input type="hidden" name="_subject" value="Website form contact" />
+	    	<input type="text" name="_gotcha" style="display:none" />
+	    	<input type="submit" value="Send">
+		</form> 
+		<script>
+			var contactform = document.getElementById('contactform');
+			contactform.setAttribute('action', '//formspree.io/' + 'ing' + 'rid@' + 'frank' + 'enmed' + 'ia.ca');
+		</script>
 
     </section>
 </div>

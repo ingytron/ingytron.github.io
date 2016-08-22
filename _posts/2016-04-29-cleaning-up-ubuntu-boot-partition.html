@@ -7,7 +7,7 @@ categories: linux
 
 <h1>How to free up room on /boot</h1>
 
-<p>If you've been running Ubuntu for a while and have a smallish /boot drive, then chances are you might run out of space on it. This happens to me at least every few months and this is what I do:</p>
+<p>If you've been running Ubuntu for a while and have a smallish /boot drive, then chances are you might run out of space on it. This happens to me at least every few months and this is what I do:</p><!--more-->
 
 <h4>Step 1.</h4>
 <p>Check which kernel version you're currently running. You definitely don't want to delete the one you're using.</p>
@@ -50,5 +50,7 @@ sudo apt-get remove linux-image-<em>[version]</em>
 <p>If you are using Grub and want to clear out old packages from your boot menu, use the following command:</p>
 
 <code>sudo update-grub</code>
+
+<br />
 
 <p>All done! </p>

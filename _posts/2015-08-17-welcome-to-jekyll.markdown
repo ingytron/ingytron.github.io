@@ -6,7 +6,7 @@ categories: coding
 ---
 This is my first post since moving from WP to Jekyll, so I guess it's sort of a new blog. 
 
-I'm keeping this here for reference...
+I'm keeping this here for reference...<!--more-->
 
 {% highlight ruby %}
 def print_hi(name)
