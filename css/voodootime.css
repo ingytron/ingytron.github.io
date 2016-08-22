@@ -1,74 +1,180 @@
-/*Typography*/
+/* =============================================================================
+  body styling
+============================================================================= */
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       "Playfair Display", Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
-
-@font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
-
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
-
-@line-height-base:        1.428571429; // 20/14
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
-
-@headings-font-family:    inherit;
-@headings-font-weight:    500;
-@headings-line-height:    1.1;
-@headings-color:          inherit;
-
-/*body styling*/	
+html {font-weight: 400;
+  height: 100%;
+  line-height: 1.5em;
+  list-style-position: outside;
+  list-style-type: none;
+  overflow: auto;
+  position: relative;
+  quotes: "\201c" "\201d" "\2018" "\2019";
+  text-align: center;
+  width: 100%;
+  /* background-image: url('/images/floral_wallpaper.jpg');*/
+  }
+body {
+  padding: 24px 0 0 0; /* Creating some vertical space for fixed navigation bar */
+  
+  }
 
 body {background: #fff;
+
 -moz-background-size: cover;
 -webkit-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+
+background-image: url('/images/164.jpg');
+/*background-repeat: repeat;*/
 }
 
-.fancypants {
-	background-color: #439AA6;
+#blog_content {background-color: rgb(255,255,255);
+margin-top: 25px;}
+
+/* =============================================================================
+  header + menus
+============================================================================= */
+header {
+  background-color: rgba(255,255,255,1);
+  border-top: 3px solid rgb(40,40,40);
+  border-bottom: solid 1px rgb(227,34,137);
+  color: rgb(40,40,40);
+  font-family: Helvetica, Arial, sans-serif;
+  z-index: 999;
 }
 
-#veve {background-image: url("/assets/veve.png");}
+li.a {text-transform: uppercase;
+  color: rgb(240,60,156);
+  }
 
-#footer {
-	background-color: #ccc;
+h1, h2, h3, h4 {font-family: "estilo-regular";}
+
+h5 {font-family: 'Roboto', Arial, sans-serif;
+  font-size: 10px;}
+
+#title_header {
+  background-color: rgb(255,255,255);
+  /* margin: 0 auto;*/
+  position: absolute fixed;
+   
 }
 
-#header {background-color: #fff;}
+.site-title {font-size: 2em;
+  font-family: "estilo-script", sans-serif;
+  }
 
-
-#main {background-color: #fff;}
-h1 span {background-color: #fff;}
-
-h1, h2, h3, h4 {
-	font-family: serif;
-}
-
-p {
-  font-family: 'Roboto Sans', sans-serif;
-}
+/* =============================================================================
+  typography
+============================================================================= */
 
 a, a:visited {
   color: #333;
 }
 
-a:hover { color: #84E8EF;}
+a:hover { color: #84E8EF;
+  text-decoration: none;}
 
-.lead { }
+a.navbar-nav {color:rgb(227,34,137);}
+
+.lead {font-size: 14px; }
+
+p {font-family: 'Roboto', Helvetica, Arial, sans-serif;}
+
+/* This line should appear on the side of the element, applying it to H2 is not working */
+.lined {}
+
+.fancy {color: rgb(227,34,137);}
+
+.intro {
+  font-family: 'Roboto', Arial, sans-serif;
+  }
+
+  h2:before,
+  h2:after {
+    content: ""; 
+    position: absolute; 
+    top: 50%;
+    width: 200%; /*can be set larger, but this was the largest it needed to be in my case*/
+    height: 0;
+    
+    /* the fancy pink keylines*/
+    border-top: solid 1px rgb(227,34,137);;
+    border-bottom: solid 1px rgb(227,34,137);; 
+  }
+  
+  /* 
+   * Making pseudeo-elements start at boundaries of the text element
+   */
+  
+  h2:before {
+    right: 100%; 
+  }
+  
+  h2:after {
+    left: 100%; 
+  }
+
+/* =============================================================================
+  main area styling
+============================================================================= */
+
+.jumbotron {background-color: rgb(245,245,245);
+  margin-top: 25px;}
+
+/* Styling for front page portfolio teaser, not portfolio page */
+#port {background-color: rgb(255,255,255);
+  padding-bottom: 25px;
+}
+
+.port-img {max-width: 33%;
+}
+
+/*Styling used on portfolio page */
+
+#port {background-color: rgb(255,255,255);
+  margin-top: 25px;
+  padding-top: 10px;}
+
+hr.love {
+  border-top: 4px double #8c8b8b;
+  text-align: center;
+}
+hr.love:after {
+  content: '\002665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+
+
+/* =============================================================================
+  footer
+============================================================================= */
 
 #footer {
-	
+	  background-image: linear-gradient(45deg, #101010 25%, #242424 25%, #242424 50%, #101010 50%, #101010 75%, #242424 75%, #242424);
+    background-size: 8px 8px;
+    padding-bottom: 25px;
+    border-top: solid 1px rgb(227,34,137);
 }
 
 #footer p {
-	color: #333;
-	font-weight: bold;}
+	color: #fefefe;
+	/*font-weight: bold;*/}
+
+#footer a {
+  color: rgb(227,34,137);
+}
+
+#footer h2 {color: rgb(227,34,137);
+font-weight: bold;}
+
+
+
+/* Todo: Fix responsiveness, esp in hero section;#footer-desc */

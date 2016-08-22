@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+	<meta charset="utf-8" />
+	<title>{% if page.title %} {{ page.title }} | {% endif %} VoodooBettie, Devsigner</title>
+	<link rel="stylesheet" href="voodootime.css" /><!-- this might be redundant -->
   {% include head.html %}
-
-  <body>
-
-
-    {% include header.html %}
-
-    <p>This is a test</p>
-
-        {{ content }}
+</head>
+<body>
+	
+{% include header.html %}
 
 
-<!--include sidebar 
-Blogs I like:
-<a href="http://www.codinghorror.com/">Coding Horror</a>
-<a href="http://morethancoding.com/">More Than Coding</a>
-<a href="http://www.joelonsoftware.com/">Joel on Software</a>
-<a href="http://googledevelopers.blogspot.ca/">Google Developer Blog</a>
--->
+<div id="main">
+
+{{ content }}
+
+</div><!-- end main div -->
 
     {% include footer.html %}
 
+</div>
 
-  </body>
+</body>
 
 </html>

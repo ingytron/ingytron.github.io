@@ -1,102 +1,60 @@
 ---
 layout: default
 ---
+
+
+
 <div class="container">
-<div class="home">
-
-  <div id='bio' class="col-md-12 jumbotron">
-      <h1 class="lead">I'm a Full-Stack JavaScript Developer</h1>  
-
-         <p>I'm a web developer who has created websites for 15+ years. I have hundreds of hours experience coding in Javascript, and have taken the time to study and practice it to an advanced level. As well as pure JavaScript, I also work with frameworks (AngularJS, NodeJS, Meteor).</p>
-
-    <p>I've been building websites since the late '90s, and was working with LAMP stack until I switched to MEAN stack a couple of years ago. I have been working my way through <a href="http://freecodecamp.com/">FreeCodeCamp</a>, a Full Stack specialization on Coursera, and a BS in Computer Science, majoring in Software Development, at <a href="http://une.edu.au">UNE</a>. </p>
-
-      <p>I enjoy geeky stuff, elegant typefaces, drinking a lot of coffee and reading.</p>
 
 
-    </div>
 
+  <div class="container">
 
-  <div class="page-content">
-      <div class="wrapper">
-          <div class="container">
-
-
-      
-      
-    </div>
-
-    <div id="portfolio" class="col-md-12">
-
-     <img class="img-responsive" src="http://placehold.it/1140x350" alt="placeholder" data-toggle="modal" data-target="#project1">
-   </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Featured Work</h2>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-6">
-        <img class="img-responsive" src="http://placehold.it/555x300" alt="placeholder" data-toggle="modal" data-target="#project2">
-        <h3>LandTec Industries</h3>
-        <p><a href="http://landtecindustries.com">Link to project</a></p>
-        <p>Design and development with WordPress</p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive" src="http://placehold.it/555x300" alt="placeholder" data-toggle="modal" data-target="#project3">
-        <h3>Accessible Wellness</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-        <p>Design and development with WordPress</p>
-      </div>
-    </div>
-    <div class="row">
-
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/555x300" alt="placeholder" data-toggle="modal" data-target="#project4">
-        <h3>Signal &amp; Noise Festival</h3>
-        <p>Developed the website for the festival (2010 and 2011) and consolidated past sites into the new structure, including assets and admin navigation. Developed in WordPress / PHP. </p>
-          <blockquote>Showcasing a spectrum of audio &amp; video works, online games, live action performances and immersive installations, Signal &amp; Noise is Vancouver’s premier alternative media event.</blockquote>
-        <p><a href="https://vimeo.com/user1914843">Site gone but details available here</a></p>
-        <p>Tags: web development, php, wordpress</p>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/555x300" alt="placeholder" data-toggle="modal" data-target="#project5">
-        <h3>Quadra Island Fall Fair</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-        <p>Design and development with WordPress. This site was built for a local farmer's fair using partially supplied design assets and several bespoke graphics. </p>
-      </div>
-            <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/555x300" alt="placeholder" data-toggle="modal" data-target="#project6">
-        <h3>Accessible Wellness</h3>
-        <p><a href="http://github.com">Link to project</a> Built with WordPress / PHP.</p>
-      </div>
-    </div>   
-
-      </div>
-    </div>
+{% include hero.html %}          
 
 </div>
 
 <div class="row">
-  <div class="col-md-6">
-  <h1 class="page-heading">Posts</h1>
+  <div class="col-md-12" id="port">
+    <h2>Selected work:</h2>
+    <img class="img img-responsive img-thumbnail port-img" src="{{ site.baseurl }}/images/portfolio/SowingSeeds-port.png" />
+    <img class="img img-responsive img-thumbnail port-img" src="{{ site.baseurl }}/images/portfolio/SN2010-port.png" />
+    <img class="img img-responsive img-thumbnail port-img" src="{{ site.baseurl }}/images/portfolio/Landtec-port.png" />
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div>
+      <h3 class="text-center"><a href="{{ site.baseurl }}/portfolio/">View more -></a></h3>
+    </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12" id="blog_content">
+      <h2>Blog</h2>
+
+          {% for post in site.posts %}
+          <h5 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+          <p class="post-meta">{{ post.date | date_to_string }}</p>
+
+              <div class="col-md-4 portfolio-item">
+                  <a href="#{{ post.modalID }}" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i><p>This is a caption</p>
+                          </div>
+                      </div>
+                      <img src="{{ site.baseurl }}/{{ post.img }}" class="img-responsive" alt="">
+                  </a>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  
+              </div>
+          {% endfor %}
+    </div>
+  </div>
+    </div>
+  </div>
 </div>
 
 
-  <p class="rss-subscribe">Subscribe to posts <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
 </div>

@@ -4,7 +4,7 @@ title:  "Hello World!"
 date:   2015-08-17 22:47:40
 categories: coding
 ---
-This is my first post on my new blog. I'm not sure if I'll import my old blog, seeing as most of it was drivel anyhow, or outdated tech how-tos that nobody read. 
+This is my first post since moving from WP to Jekyll, so I guess it's sort of a new blog. 
 
 I'm keeping this here for reference...
 

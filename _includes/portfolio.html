@@ -1,0 +1,34 @@
+<section id="portfolio">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center" id="port">
+      <h1>Featured Projects</h1>
+
+    <div class="col-md-8 col-md-push-2 text-center">  
+    <p>These projects represent my abilities as a web developer and designer. I'm always striving to find better ways to do things, growing my skills and increasing my efficiency.</p> 
+    <p>For the past three years, <a href="{{ site.baseurl }}/about/">I've been moving away from building sites with WordPress and PHP, and instead honing my skills in JavaScript and Python</a>, and hence not doing a lot of client-driven work. For examples of the projects and code I've written more recently please take a look at my code on <a href="http://github.com/voodoobettie">GitHub</a> and <a href="http://codepen.io/voodoobettie/">CodePen</a>. The new projects I have in development will be added when ready.</p>
+    <br />&nbsp;<br />
+    </div>
+
+    <div class="clearfix"></div>
+    <div>
+    {% for portfolio in site.portfolio %}
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail">
+
+        <img class="img img-responsive" src="{{ portfolio.image_path }}" alt="{{ portfolio.title }}"></a>
+        <div class="caption">
+          <h4>{{ portfolio.title }}</h4>
+          <p>{{ portfolio.excerpt }}</p>
+          <p>Project type: {{ portfolio.type }}
+          <p>Built using: {{ portfolio.built_with }}
+            <br />&nbsp;<br />
+          <a href = "#" class = "btn btn-primary" role = "button">More info</a> 
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+</section>

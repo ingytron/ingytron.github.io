@@ -1,0 +1,11 @@
+Adobe CS4 OpenType Font Problems
+2009-06-05 13:39:46
+
+I've been running CS4 for a little while now on my Win XP workstation (normally the one I use to play games but it''s a beast so I figured it''d run CS4 well and it''s cheaper than the fancy iMac of my dreams) but I had pretty much none of the fonts install properly during the initial installation.
+
+I thought that perhaps the font problem had to do with my virus protection but I noticed even with virus protection disabled that installing some new fonts would fail, giving me an error that said that the file was corrupted or invalid and that I should contact the font vendor for a new file:
+<code>Cannot activate font "$font_name". Font may be invalid or damaged. Please contact the vendor for a new file.</code>
+
+After some experimentation I found that TrueType fonts installed for me just fine and the problem was only with OpenType (OTF) fonts. I did a lot of searching around on the internet, most of the advice was completely useless so I figured I should document this in case someone else has the same issue.
+
+The problem was caused by the video driver. I found in my internet travels that some people running Windows Vista and XP had a similar issue with an NVidia driver (I use an ATI Radeon) so I thought updating my driver was worth trying. I downloaded the latest driver for my video card from AMD''s website and restarted (after all, it''s a PC). I then tried to install the OpenType font I recently purchased from <a href="http://www.veer.com/">Veer</a> and it worked! I then copied the fonts over from CS4''s goodies folder and I now have my fonts available in my CS4 applications and life is sweet once more! Huzzah!
