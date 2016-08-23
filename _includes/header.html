@@ -25,7 +25,11 @@
           {% if page.title %}
           <li><a class="nav" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}
+          {% if page.url contains link.url %} <!--not working right, todo: fix -->
+            {% assign class="active" %}
+          {% endif %}
         {% endfor %}
+
       </div>
 </nav>
 

@@ -4,7 +4,7 @@ email: contact@voodoobettie.com
 description: > # this means to ignore newlines until "baseurl:"
   VoodooBettie &mdash; Designer with a Heart of Code&trade;
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.voodoobettie.com" # the base hostname & protocol for your site
+url: "http://voodoobettie.githubpages.io" # the base hostname & protocol for your site
 twitter_username: voodoobettie
 github_username:  voodoobettie
 permalink: '/:title'
